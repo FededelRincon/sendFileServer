@@ -1,7 +1,7 @@
 {
-  "name": "nodesend-servidor",
+  "name": "sendfile-servidor",
   "version": "1.0.0",
-  "description": "Proyecto NodeSend",
+  "description": "Proyecto para enviar archivos",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon ./index.js",
@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "express-validator": "^6.13.0",

@@ -15,7 +15,8 @@ const isLogin = (req, res, next) => {
         } catch (error) {
             console.log(error);
             console.log('JWT no valido');
-            res.json({ msg: 'Token no valido' });
+            return res.json({ msg: 'Token no valido' });    
+            //chequear que pasa cuando expira el token, ya fallo y creo q el return lo arregla
         }
     }
     return next();
